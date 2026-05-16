@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Umbergaon East Bhati Road - Community Website</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav id="topnav">
+  <div class="logo">🏘️ <span>Bhati Road</span><br><span style="font-size:10px;opacity:0.7;font-weight:400">Umbergaon East</span></div>
+  <button id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- SIDE MENU OVERLAY -->
+<div id="overlay" onclick="closeMenu()"></div>
+<div id="sidemenu">
+  <button class="close-btn" onclick="closeMenu()">✕</button>
+  <a href="#" onclick="showPage('home');closeMenu();" id="menu-home" class="active">🏠 Home</a>
+  <a href="#" onclick="showPage('hospitals');closeMenu();" id="menu-hospitals">🏥 Hospital & Clinic</a>
+  <a href="#" onclick="showPage('emergency');closeMenu();" id="menu-emergency">🚨 Emergency Numbers</a>
+  <a href="#" onclick="showPage('transport');closeMenu();" id="menu-transport">🚌 Transport Guide</a>
+  <a href="#" onclick="showPage('market');closeMenu();" id="menu-market">🛒 Market & Shops</a>
+  <a href="#" onclick="showPage('schools');closeMenu();" id="menu-schools">🏫 Schools & Coaching</a>
+  <a href="#" onclick="showPage('jobs');closeMenu();" id="menu-jobs">💼 GIDC Jobs</a>
+  <a href="#" onclick="showPage('news');closeMenu();" id="menu-news">📰 Local Khabar</a>
+  <a href="#" onclick="showPage('events');closeMenu();" id="menu-events">🎉 Events & Festivals</a>
+  <a href="#" onclick="showPage('contact');closeMenu();" id="menu-contact">📞 Sampark / Contact</a>
+</div>
+
+<!-- ======================== HOME PAGE ======================== -->
+<div id="page-home" class="page active">
+  <div class="hero">
+    <div class="hero-flag">🇮🇳</div>
+    <h1>Umbergaon East<br><span>Bhati Road</span></h1>
+    <p>Aapke area ki sabhi zaroori jaankari<br>ek hi jagah — Aapka Digital Manch</p>
+    <div class="hero-stats">
+      <div class="stat"><div class="num">10+</div><div class="lbl">Hospitals</div></div>
+      <div class="stat"><div class="num">50+</div><div class="lbl">Shops</div></div>
+      <div class="stat"><div class="num">24/7</div><div class="lbl">Emergency</div></div>
+    </div>
+  </div>
+  <div class="quick-grid">
+    <div class="quick-btn" onclick="showPage('hospitals')"><div class="icon">🏥</div><div class="label">Hospital</div></div>
+    <div class="quick-btn" onclick="showPage('emergency')"><div class="icon">🚨</div><div class="label">Emergency</div></div>
+    <div class="quick-btn" onclick="showPage('transport')"><div class="icon">🚌</div><div class="label">Transport</div></div>
+    <div class="quick-btn" onclick="showPage('market')"><div class="icon">🛒</div><div class="label">Market</div></div>
+    <div class="quick-btn" onclick="showPage('schools')"><div class="icon">🏫</div><div class="label">Schools</div></div>
+    <div class="quick-btn" onclick="showPage('jobs')"><div class="icon">💼</div><div class="label">Jobs</div></div>
+    <div class="quick-btn" onclick="showPage('news')"><div class="icon">📰</div><div class="label">Khabar</div></div>
+    <div class="quick-btn" onclick="showPage('events')"><div class="icon">🎉</div><div class="label">Events</div></div>
+  </div>
+  <div class="emergency-banner" style="margin:0 12px 4px;">
+    <h3>🚨 Emergency — Turant Sampark</h3>
+    <div class="emer-grid">
+      <a class="emer-btn" href="tel:100"><div class="num">100</div><div class="lbl">👮 Police</div></a>
+      <a class="emer-btn" href="tel:108"><div class="num">108</div><div class="lbl">🚑 Ambulance</div></a>
+      <a class="emer-btn" href="tel:101"><div class="num">101</div><div class="lbl">🚒 Fire</div></a>
+      <a class="emer-btn" href="tel:1077"><div class="num">1077</div><div class="lbl">⚡ Bijli</div></a>
+    </div>
+  </div>
+  <div class="sec-head"><h2>📰 Taaza Khabar</h2><div class="line"></div></div>
+  <div style="padding:0 12px">
+    <div class="news-card">
+      <span class="news-cat tag-orange">🏗️ Vikas</span>
+      <div class="news-title">Bhati Road pe naye road ka nirman shuru</div>
+      <div class="news-date">📅 May 2026</div>
+    </div>
+    <div class="news-card">
+      <span class="news-cat tag-green">🏥 Swasthya</span>
+      <div class="news-title">Free Health Camp — Civil Hospital, May 10</div>
+      <div class="news-date">📅 May 10, 2026</div>
+    </div>
+  </div>
+</div>
+
+<!-- ======================== HOSPITALS PAGE ======================== -->
+<div id="page-hospitals" class="page">
+  <div class="page-bar">🏥 Hospital & Clinic</div>
+  <div style="height:12px"></div>
+  <div class="card-list">
+    <div class="card">
+      <div class="card-head">
+        <div class="icon-box bg-red">🏥</div>
+        <div class="info"><div class="name">Aarna Clinic</div><div class="addr">Gokuldham, behind Saraswati Hindi School, Devdham, Umargam — 396170</div></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-green">⭐ 4.8 Rating</span>
+        <span class="tag tag-blue">Dr. Chetan Singh</span>
+        <span class="tag tag-orange">9am–10pm daily</span>
+      </div>
+      <div class="card-actions">
+        <a class="btn-map" href="https://maps.google.com/?q=Aarna+Clinic+Umbergaon" target="_blank">📍 Maps pe Dekho</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="icon-box bg-red">🚑</div>
+        <div class="info"><div class="name">Niva Hospital</div><div class="addr">Near Mamletdar Office, Umbergaon–Dehri Rd — 396170</div></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-green">24/7 Open</span>
+        <span class="tag tag-blue">⭐ 4.0 Rating</span>
+      </div>
+      <div class="card-actions">
+        <a class="btn-call" href="tel:+916351663034">📞 Call</a>
+        <a class="btn-map" href="https://maps.google.com/?q=Niva+Hospital+Umbergaon" target="_blank">📍 Maps</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="icon-box bg-red">🏨</div>
+        <div class="info"><div class="name">Om Hospital</div><div class="addr">Amba Complex, 1st Floor, Gandhiwadi, near Gokul Cycle Store, Devdham</div></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-green">24/7 Open</span>
+        <span class="tag tag-blue">⭐ 5.0 Rating</span>
+      </div>
+      <div class="card-actions">
+        <a class="btn-call" href="tel:+919881434189">📞 Call</a>
+        <a class="btn-map" href="https://maps.google.com/?q=Om+Hospital+Umbergaon" target="_blank">📍 Maps</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <div class="icon-box bg-blue">💊</div>
+        <div class="info"><div class="name">Primary Health Centre (PHC)</div><div class="addr">Government PHC — Free sarkari treatment, Umbergaon</div></div>
+      </div>
+      <div class="card-tags">
+        <span class="tag tag-green">Free / Sarkari</span>
+        <span class="tag tag-orange">Mon–Sat 9am–1pm</span>
+      </div>
+      <div class="card-actions">
+        <a class="btn-map" href="https://maps.google.com/?q=PHC+Umbergaon" target="_blank">📍 Maps pe Dhundho</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ======================== EMERGENCY PAGE ======================== -->
+<div id="page-emergency" class="page">
+  <div class="page-bar">🚨 Emergency Numbers</div>
+  <div style="height:12px"></div>
+  <div style="padding:0 12px">
+    <div class="emergency-banner" style="margin:0 0 12px;">
+      <h3>⚠️ Aapaat Sthiti mein turant call karein</h3>
+      <div class="emer-grid">
+        <a class="emer-btn" href="tel:100"><div class="num">100</div><div class="lbl">👮 Police</div></a>
+        <a class="emer-btn" href="tel:108"><div class="num">108</div><div class="lbl">🚑 Ambulance</div></a>
+        <a class="emer-btn" href="tel:101"><div class="num">101</div><div class="lbl">🚒 Fire Brigade</div></a>
+        <a class="emer-btn" href="tel:102"><div class="num">102</div><div class="lbl">👶 Bal Helpline</div></a>
+      </div>
+    </div>
+    <div class="card"><div class="card-head"><div class="icon-box bg-orange">⚡</div><div class="info"><div class="name">PGVCL — Bijli Complaint</div><div class="addr">Power failure, line fault, meter complaint</div></div></div><div class="card-actions"><a class="btn-call" href="tel:18002331011">📞 1800 233 1011 (Free)</a></div></div>
+    <div style="height:10px"></div>
+    <div class="card"><div class="card-head"><div class="icon-box bg-blue">💧</div><div class="info"><div class="name">Jal Jeevan — Paani Complaint</div><div class="addr">Pani band, leakage, pipe problem</div></div></div><div class="card-actions"><a class="btn-call" href="tel:1916">📞 1916 (Free)</a></div></div>
+    <div style="height:10px"></div>
+    <div class="card"><div class="card-head"><div class="icon-box bg-purple">🧒</div><div class="info"><div class="name">Child Helpline</div><div class="addr">Bachchon ki suraksha ke liye</div></div></div><div class="card-actions"><a class="btn-call" href="tel:1098">📞 1098 (Free)</a></div></div>
+    <div style="height:10px"></div>
+    <div class="card"><div class="card-head"><div class="icon-box bg-teal">🏦</div><div class="info"><div class="name">Cyber Crime Helpline</div><div class="addr">Online fraud, ATM fraud ke liye</div></div></div><div class="card-actions"><a class="btn-call" href="tel:1930">📞 1930 (Free)</a></div></div>
+  </div>
+</div>
+
+<!-- ======================== TRANSPORT PAGE ======================== -->
+<div id="page-transport" class="page">
+  <div class="page-bar">🚌 Transport Guide</div>
+  <div style="height:12px"></div>
+  <div style="padding:0 12px">
+    <div class="route-card">
+      <div class="route-head"><div class="ricon">🛺</div><div class="rtitle">Bhati Road → Umbergaon Station</div></div>
+      <div class="route-stops">Navinagari → Bhati Road Chowk → Station Road → Railway Station</div>
+      <div class="route-info"><span>🕐 ~10 min</span><span>🛺 Auto / Share Rickshaw</span><span>💰 ₹10–15</span></div>
+    </div>
+    <div class="route-card">
+      <div class="route-head"><div class="ricon">🚌</div><div class="rtitle">Bhati Road → Vapi</div></div>
+      <div class="route-stops">Bhati Road → Umbergaon Bus Stand → National Highway → Vapi</div>
+      <div class="route-info"><span>🕐 ~35 min</span><span>🚌 ST Bus / Private</span><span>💰 ₹20–40</span></div>
+    </div>
+    <div class="route-card">
+      <div class="route-head"><div class="ricon">🏭</div><div class="rtitle">Bhati Road → GIDC</div></div>
+      <div class="route-stops">Bhati Road → Station Road → GIDC Gate 1 → Umbergaon INA</div>
+      <div class="route-info"><span>🕐 ~15 min</span><span>🛺 Auto / Cycle</span><span>💰 ₹15–20</span></div>
+    </div>
+    <div class="route-card">
+      <div class="route-head"><div class="ricon">🚂</div><div class="rtitle">Umbergaon Railway Station</div></div>
+      <div class="route-stops">Mumbai Local / Western Railway — Vapi–Umbergaon–Surat route</div>
+      <div class="route-info"><span>📞 139 Enquiry</span><span>🌐 irctc.co.in</span></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div class="icon-box bg-orange">🛺</div><div class="info"><div class="name">Auto Rickshaw Stand</div><div class="addr">Bhati Road Chowk pe auto milte hain — subah 6am se raat 10pm tak</div></div></div>
+      <div class="card-tags"><span class="tag tag-orange">No meter — baat karke tay karein</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ======================== MARKET PAGE ======================== -->
+<div id="page-market" class="page">
+  <div class="page-bar">🛒 Market & Shops</div>
+  <div style="height:12px"></div>
+  <div style="padding:0 12px;margin-bottom:12px;">
+    <div style="background:white;border-radius:12px;border:1px solid var(--border);padding:14px;margin-bottom:10px;">
+      <div style="font-size:14px;font-weight:700;color:var(--navy);margin-bottom:8px;">🗓️ Market Schedule & Timing</div>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 10px;background:#e3f2fd;border-radius:8px;">
+          <div><div style="font-size:12px;font-weight:600;color:#0d2137;">🏪 Sunday Haat Bazaar</div><div style="font-size:10px;color:#546e7a;">📍 Umbergaon Town Market, Gandhiwadi</div></div>
+          <div style="text-align:right"><div style="font-size:11px;font-weight:700;color:#1565c0;">Ravivar</div><div style="font-size:10px;color:#546e7a;">8am – 2pm</div></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 10px;background:#e8f5e9;border-radius:8px;">
+          <div><div style="font-size:12px;font-weight:600;color:#0d2137;">🥦 Sabzi Mandi (Daily)</div><div style="font-size:10px;color:#546e7a;">📍 Bhati Road Chowk ke paas</div></div>
+          <div style="text-align:right"><div style="font-size:11px;font-weight:700;color:#2e7d32;">Roz</div><div style="font-size:10px;color:#546e7a;">6am – 11am</div></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 10px;background:#fff3e0;border-radius:8px;">
+          <div><div style="font-size:12px;font-weight:600;color:#0d2137;">🏬 GIDC Market Area</div><div style="font-size:10px;color:#546e7a;">📍 Umbergaon INA, GIDC</div></div>
+          <div style="text-align:right"><div style="font-size:11px;font-weight:700;color:#e65100;">Mon–Sat</div><div style="font-size:10px;color:#546e7a;">9am – 9pm</div></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 10px;background:#f3e5f5;border-radius:8px;">
+          <div><div style="font-size:12px;font-weight:600;color:#0d2137;">🐟 Machhli Bazaar</div><div style="font-size:10px;color:#546e7a;">📍 Station Rd, Umbergaon</div></div>
+          <div style="text-align:right"><div style="font-size:11px;font-weight:700;color:#6a1b9a;">Roz</div><div style="font-size:10px;color:#546e7a;">5am – 10am</div></div>
+        </div>
+      </div>
+      <div style="margin-top:10px;display:flex;gap:6px;">
+        <a href="https://maps.google.com/?q=Umbergaon+Town+Market" target="_blank" style="flex:1;background:var(--blue);color:white;border:none;border-radius:8px;padding:8px;font-size:11px;font-weight:600;text-align:center;text-decoration:none;">📍 Sunday Bazaar Map</a>
+        <a href="https://maps.google.com/?q=GIDC+Umbergaon+Market" target="_blank" style="flex:1;background:var(--green);color:white;border:none;border-radius:8px;padding:8px;font-size:11px;font-weight:600;text-align:center;text-decoration:none;">📍 GIDC Map</a>
+      </div>
+    </div>
+  </div>
+  <div class="market-banner">
+    <h3>🎪 Sunday Bazaar — Har Ravivar</h3>
+    <p>Subah 8am se 2pm — Umbergaon Town Market ke paas<br>Category pe click karo — products dekho!</p>
+    <div class="market-items">
+      <span class="market-item" onclick="showProducts('sabzi')" style="cursor:pointer;">🥦 Sabzi</span>
+      <span class="market-item" onclick="showProducts('kapde')" style="cursor:pointer;">👗 Kapde</span>
+      <span class="market-item" onclick="showProducts('joote')" style="cursor:pointer;">👟 Joote</span>
+      <span class="market-item" onclick="showProducts('ghar')" style="cursor:pointer;">🏠 Ghar Saman</span>
+      <span class="market-item" onclick="showProducts('cosmetics')" style="cursor:pointer;">💄 Cosmetics</span>
+      <span class="market-item" onclick="showProducts('masale')" style="cursor:pointer;">🌾 Masale</span>
+    </div>
+  </div>
+  <!-- Product Popup -->
+  <div id="product-overlay" onclick="closeProducts()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:300;"></div>
+  <div id="product-popup" style="display:none;position:fixed;bottom:0;left:0;right:0;background:white;border-radius:20px 20px 0 0;z-index:400;max-height:70vh;overflow-y:auto;padding:20px 16px 40px;">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
+      <div id="popup-title" style="font-size:16px;font-weight:700;color:#0d2137;"></div>
+      <button onclick="closeProducts()" style="background:none;border:none;font-size:22px;cursor:pointer;color:#546e7a;">✕</button>
+    </div>
+    <div id="popup-products"></div>
+  </div>
+  <div class="card-list" style="margin-top:12px">
+    <div class="card">
+      <div class="card-head"><div class="icon-box bg-green">🏪</div><div class="info"><div class="name">Chheda Superstore</div><div class="addr">GIDC Umbergaon INA — Sab kuch ek jagah milta hai</div></div></div>
+      <div class="card-tags"><span class="tag tag-green">⭐ 4.2 (1119 reviews)</span><span class="tag tag-blue">9:30am–9:30pm</span></div>
+      <div class="card-actions"><a class="btn-map" href="https://maps.google.com/?q=Chheda+Superstore+Umbergaon" target="_blank">📍 Maps</a></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div class="icon-box bg-blue">📱</div><div class="info"><div class="name">Bhatia's Mobile Shop</div><div class="addr">Opp. Kalash Petrol Pump, Station Rd, Umargam</div></div></div>
+      <div class="card-tags"><span class="tag tag-blue">All Mobile Brands</span><span class="tag tag-green">0% Finance on Apple</span></div>
+      <div class="card-actions"><a class="btn-call" href="tel:+919974322143">📞 Call</a></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div class="icon-box bg-orange">🍛</div><div class="info"><div class="name">Triveni Restaurant</div><div class="addr">GIDC Umbergaon INA — Veg & Non-veg dono</div></div></div>
+      <div class="card-tags"><span class="tag tag-green">⭐ 3.9 Rating</span><span class="tag tag-blue">Lunch 12–3pm</span><span class="tag tag-orange">Dinner 7–11pm</span></div>
+      <div class="card-actions"><a class="btn-call" href="tel:+919173213178">📞 Call</a><a class="btn-map" href="https://maps.google.com/?q=Triveni+Restaurant+Umbergaon" target="_blank">📍 Maps</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- ======================== SCHOOLS PAGE ======================== -->
+<div id="page-schools" class="page">
+  <div class="page-bar">🏫 Schools & Coaching</div>
+  <div style="height:12px"></div>
+  <div class="card-list">
+    <div class="card">
+      <div class="card-head"><div class="icon-box bg-blue">🏫</div><div class="info"><div class="name">Saraswati Hindi School</div><div class="addr">Gokuldham, Devdham, Umargam — Hindi medium</div></div></div>
+      <div class="card-tags"><span class="tag tag-blue">Class 1–10</span><span class="tag tag-green">Hindi Medium</span></div>
+      <div class="card-actions"><a class="btn-map" href="https://maps.google.com/?q=Saraswati+Hindi+School+Umbergaon" target="_blank">📍 Maps</a></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div class="icon-box bg-green">📚</div><div class="info"><div class="name">Government Primary School</div><div class="addr">Navinagari, Bhati Road, Umbergaon East</div></div></div>
+      <div class="card-tags"><span class="tag tag-green">Free Sarkari School</span><span class="tag tag-blue">Gujarati Medium</span></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div class="icon-box bg-purple">🎓</div><div class="info"><div class="name">Private Tuition / Coaching</div><div class="addr">Bhati Road area mein kai tuition centers — Class 5 se 12 tak</div></div></div>
+      <div class="card-tags"><span class="tag tag-orange">Maths, Science, English</span><span class="tag tag-blue">Evening batches</span></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><div class="icon-box bg-orange">🏆</div><div class="info"><div class="name">Scholarship Information</div><div class="addr">SC/ST/OBC students ke liye sarkaari scholarship</div></div></div>
+      <div class="card-tags"><span class="tag tag-green">scholarships.gujarat.gov.in</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ======================== JOBS PAGE ======================== -->
+<div id="page-jobs" class="page">
+  <div class="page-bar">💼 GIDC Jobs — Rojgar</div>
+  <div style="height:12px"></div>
+  <div style="padding:0 12px;margin-bottom:12px;">
+    <div style="background:linear-gradient(135deg,#1565c0,#0d47a1);color:white;border-radius:12px;padding:16px;">
+      <h3 style="font-size:15px;font-weight:700;margin-bottom:6px;">🏭 Umbergaon GIDC — Industrial Area</h3>
+      <p style="font-size:12px;opacity:0.9;line-height:1.6">Chemical, Textile, Plastic, Packaging factories — hazaron jobs available hain.</p>
+    </div>
+  </div>
+  <div style="padding:0 12px">
+    <div class="job-card">
+      <div class="job-title">Factory Worker / Helper</div>
+      <div class="job-company">🏭 Chemical & Plastic Companies, GIDC</div>
+      <div class="job-details">📍 GIDC Umbergaon INA<br>💰 ₹8,000–₹14,000/month<br>📋 8th/10th pass bhi chalega<br>🕐 Day & Night shifts</div>
+    </div>
+    <div class="job-card">
+      <div class="job-title">Security Guard</div>
+      <div class="job-company">🛡️ Industrial Security Companies</div>
+      <div class="job-details">📍 GIDC + Residential societies<br>💰 ₹9,000–₹12,000/month<br>📋 12th pass + Physical fitness<br>🕐 12 hour shifts</div>
+    </div>
+    <div class="job-card">
+      <div class="job-title">Driver / Delivery Boy</div>
+      <div class="job-company">🚚 Local Transport & E-commerce</div>
+      <div class="job-details">📍 Umbergaon + nearby areas<br>💰 ₹10,000–₹18,000/month<br>📋 Valid driving license zaroori</div>
+    </div>
+    <!-- Govt Jobs -->
+    <div style="background:linear-gradient(135deg,#1b5e20,#2e7d32);color:white;border-radius:12px;padding:14px;margin-bottom:10px;">
+      <div style="font-size:14px;font-weight:700;margin-bottom:10px;">🏛️ Sarkari Naukri — Government Jobs</div>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <a href="https://ojas.gujarat.gov.in" target="_blank" style="background:rgba(255,255,255,0.15);border-radius:8px;padding:10px 12px;text-decoration:none;color:white;display:flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,0.3);">
+          <span style="font-size:20px;">⭐</span>
+          <div><div style="font-size:12px;font-weight:700;">OJAS — Gujarat Govt Job Portal</div><div style="font-size:10px;opacity:0.8;">Sabhi sarkari vacancies yahan milti hain</div></div>
+        </a>
+        <a href="https://gpsc.gujarat.gov.in" target="_blank" style="background:rgba(255,255,255,0.12);border-radius:8px;padding:10px 12px;text-decoration:none;color:white;display:flex;align-items:center;gap:10px;">
+          <span style="font-size:20px;">🏛️</span>
+          <div><div style="font-size:12px;font-weight:600;">GPSC — Gujarat Public Service Commission</div></div>
+        </a>
+        <a href="https://ssc.nic.in" target="_blank" style="background:rgba(255,255,255,0.12);border-radius:8px;padding:10px 12px;text-decoration:none;color:white;display:flex;align-items:center;gap:10px;">
+          <span style="font-size:20px;">🇮🇳</span>
+          <div><div style="font-size:12px;font-weight:600;">SSC — Staff Selection Commission</div></div>
+        </a>
+      </div>
+    </div>
+    <!-- Private Jobs -->
+    <div style="background:linear-gradient(135deg,#0d47a1,#1565c0);color:white;border-radius:12px;padding:14px;margin-bottom:10px;">
+      <div style="font-size:14px;font-weight:700;margin-bottom:10px;">🏢 Private Jobs — Apna Dhundho</div>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <a href="https://www.naukri.com/jobs-in-vapi" target="_blank" style="background:rgba(255,255,255,0.12);border-radius:8px;padding:10px 12px;text-decoration:none;color:white;display:flex;align-items:center;gap:10px;">
+          <span style="font-size:20px;">💼</span>
+          <div><div style="font-size:12px;font-weight:600;">Naukri.com — Vapi/Umbergaon Jobs</div></div>
+        </a>
+        <a href="https://www.workindia.in" target="_blank" style="background:rgba(255,255,255,0.12);border-radius:8px;padding:10px 12px;text-decoration:none;color:white;display:flex;align-items:center;gap:10px;">
+          <span style="font-size:20px;">📱</span>
+          <div><div style="font-size:12px;font-weight:600;">WorkIndia App — Local factory & helper jobs</div></div>
+        </a>
+        <a href="https://apna.co" target="_blank" style="background:rgba(255,255,255,0.12);border-radius:8px;padding:10px 12px;text-decoration:none;color:white;display:flex;align-items:center;gap:10px;">
+          <span style="font-size:20px;">🤝</span>
+          <div><div style="font-size:12px;font-weight:600;">Apna.co — Blue Collar Jobs</div></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ======================== NEWS PAGE ======================== -->
+<div id="page-news" class="page">
+  <div class="page-bar">📰 Local Khabar</div>
+  <div style="height:12px"></div>
+  <div style="padding:0 12px">
+    <div class="news-card">
+      <span class="news-cat tag-orange">🏗️ Vikas</span>
+      <div class="news-title">Bhati Road pe naye road nirman ka kaam shuru</div>
+      <div class="news-desc">Navinagari se Umbergaon station tak ki road ka kaam PWD department ne shuru kar diya hai. June 2026 tak poora hone ki umeed.</div>
+      <div class="news-date">📅 May 2026</div>
+    </div>
+    <div class="news-card">
+      <span class="news-cat tag-green">🏥 Swasthya</span>
+      <div class="news-title">Free Health Camp — Civil Hospital Umbergaon</div>
+      <div class="news-desc">Blood sugar, BP, eye checkup bilkul free. May 10, subah 9am se 1pm. Saath mein Aadhar card leke aayein.</div>
+      <div class="news-date">📅 May 10, 2026</div>
+    </div>
+    <div class="news-card">
+      <span class="news-cat tag-blue">🎓 Shiksha</span>
+      <div class="news-title">Class 10 ke baad scholarship apply karein</div>
+      <div class="news-desc">Gujarat sarkar ki Post-Matric Scholarship ke liye apply chal raha hai. Last date: June 30, 2026.</div>
+      <div class="news-date">📅 April 2026</div>
+    </div>
+    <div class="news-card">
+      <span class="news-cat tag-blue">💧 Paani</span>
+      <div class="news-title">Kal Navinagari mein paani 2 ghante band rahega</div>
+      <div class="news-desc">Pipeline maintenance ke karan subah 10am–12pm Bhati Road Navinagari area mein paani supply band rahegi.</div>
+      <div class="news-date">📅 May 6, 2026</div>
+    </div>
+  </div>
+</div>
+
+<!-- ======================== EVENTS PAGE ======================== -->
+<div id="page-events" class="page">
+  <div class="page-bar">🎉 Events & Festivals</div>
+  <div style="height:12px"></div>
+  <div style="padding:0 12px">
+    <div class="card" style="margin-bottom:10px">
+      <div class="card-head"><div class="icon-box bg-orange">🪔</div><div class="info"><div class="name">Navratri Mahotsav 2026</div><div class="addr">Bhati Road Maidan, Navinagari</div></div></div>
+      <div class="card-tags"><span class="tag tag-orange">📅 October 2026</span><span class="tag tag-green">9 Raatein Garba</span><span class="tag tag-blue">Entry Free</span></div>
+    </div>
+    <div class="card" style="margin-bottom:10px">
+      <div class="card-head"><div class="icon-box bg-purple">🐘</div><div class="info"><div class="name">Ganesh Utsav</div><div class="addr">Umbergaon East Community Pandal</div></div></div>
+      <div class="card-tags"><span class="tag tag-purple">📅 September 2026</span><span class="tag tag-blue">10 Din ka Utsav</span></div>
+    </div>
+    <div class="card" style="margin-bottom:10px">
+      <div class="card-head"><div class="icon-box bg-green">🏏</div><div class="info"><div class="name">Bhati Road Cricket Tournament</div><div class="addr">Navinagari Ground, Bhati Road</div></div></div>
+      <div class="card-tags"><span class="tag tag-green">📅 June 2026</span><span class="tag tag-orange">WhatsApp group mein register karo</span></div>
+    </div>
+    <div class="card" style="margin-bottom:10px">
+      <div class="card-head"><div class="icon-box bg-teal">🎆</div><div class="info"><div class="name">Independence Day Program</div><div class="addr">Bhati Road Community Hall, Navinagari</div></div></div>
+      <div class="card-tags"><span class="tag tag-blue">📅 August 15, 2026</span><span class="tag tag-green">Flag Hoisting 8am</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ======================== CONTACT PAGE ======================== -->
+<div id="page-contact" class="page">
+  <div class="page-bar">📞 Sampark / Contact</div>
+  <div style="height:12px"></div>
+  <div style="padding:0 12px">
+    <div class="contact-card">
+      <h3>📍 Hamara Area</h3>
+      <div class="contact-row"><div class="ico">📌</div><div class="info"><div class="lbl">Address</div><div class="val">Bhati Road, Navinagari, Umbergaon East, Gujarat — 396165</div></div></div>
+      <div class="contact-row"><div class="ico">🏛️</div><div class="info"><div class="lbl">Taluka / District</div><div class="val">Umbergaon, Valsad District, Gujarat</div></div></div>
+      <div class="contact-row"><div class="ico">📮</div><div class="info"><div class="lbl">PIN Code</div><div class="val">396165 / 396170 / 396171</div></div></div>
+    </div>
+    <div class="contact-card">
+      <h3>🏛️ Sarkari Karyalay</h3>
+      <div class="contact-row"><div class="ico">⚖️</div><div class="info"><div class="lbl">Mamlatdar Office, Umbergaon</div><div class="val">📞 02633-240221</div></div></div>
+      <div class="contact-row"><div class="ico">👮</div><div class="info"><div class="lbl">Umbergaon Police Station</div><div class="val">📞 02633-244100</div></div></div>
+    </div>
+    <div class="contact-card">
+      <h3>🌐 Website ke Baare Mein</h3>
+      <div class="contact-row"><div class="ico">📧</div><div class="info"><div class="lbl">Email</div><div class="val">singh.shivar433@gmail.com</div></div></div>
+      <div class="contact-row"><div class="ico">📱</div><div class="info"><div class="lbl">WhatsApp</div><div class="val"><a href="https://chat.whatsapp.com/EsArpSvVYSL1QnmXwu72p2" target="_blank" style="color:var(--green);font-weight:600;">+91 77780 32856 — Group Join Karein</a></div></div></div>
+    </div>
+    <div class="contact-card">
+      <h3>📲 Social Media</h3>
+      <div class="contact-row"><div class="ico">📘</div><div class="info"><div class="lbl">Facebook Page</div><div class="val"><a href="https://www.facebook.com/share/1JxCSJnmMp/" target="_blank" style="color:var(--blue);font-weight:600;">Bhati Road Umbergaon Community</a></div></div></div>
+      <div class="contact-row"><div class="ico">💬</div><div class="info"><div class="lbl">WhatsApp Group</div><div class="val"><a href="https://chat.whatsapp.com/EsArpSvVYSL1QnmXwu72p2" target="_blank" style="color:var(--green);font-weight:600;">👆 Yahan click karke join karein</a></div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ======================== DEVELOPER CREDIT ======================== -->
+<div class="dev-section">
+  <div class="dev-photo-wrap">
+    <img src="assets/shiva-singh.jpg" alt="Shiva Singh" class="dev-photo">
+    <div class="dev-badge">👨‍💻 Developer</div>
+  </div>
+  <div class="dev-name">Shiva Singh</div>
+  <div class="dev-tagline">Web Developer &amp; Community Tech Enthusiast</div>
+  <div class="dev-info-grid">
+    <div class="dev-info-item"><div class="dev-info-icon">📧</div><div class="dev-info-text"><div class="dev-info-lbl">Email</div><div class="dev-info-val"><a href="mailto:singh.shivar433@gmail.com" style="color:var(--blue)">singh.shivar433@gmail.com</a></div></div></div>
+    <div class="dev-info-item"><div class="dev-info-icon">📍</div><div class="dev-info-text"><div class="dev-info-lbl">Location</div><div class="dev-info-val">Bhati Road, Umbergaon, Gujarat</div></div></div>
+    <div class="dev-info-item"><div class="dev-info-icon">💡</div><div class="dev-info-text"><div class="dev-info-lbl">Mission</div><div class="dev-info-val">Apne ilake ko digital banana</div></div></div>
+  </div>
+  <div class="dev-footer-note">🙏 Is website ko community ke liye banaya gaya hai — free of cost</div>
+  <div class="dev-copyright">© 2026 Developed by <strong>Shiva Singh</strong> · All Rights Reserved</div>
+</div>
+
+<!-- ======================== BOTTOM NAV ======================== -->
+<div id="bottomnav">
+  <button onclick="showPage('home')" id="btn-home" class="active"><span class="bicon">🏠</span>Home</button>
+  <button onclick="showPage('hospitals')" id="btn-hospitals"><span class="bicon">🏥</span>Hospital</button>
+  <button onclick="showPage('market')" id="btn-market"><span class="bicon">🛒</span>Market</button>
+  <button onclick="showPage('jobs')" id="btn-jobs"><span class="bicon">💼</span>Jobs</button>
+  <button onclick="showPage('news')" id="btn-news"><span class="bicon">📰</span>Khabar</button>
+  <button onclick="toggleMoreMenu()" id="btn-more"><span class="bicon">⋯</span>More</button>
+</div>
+
+<!-- MORE MENU POPUP -->
+<div id="more-overlay" onclick="closeMoreMenu()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:180;"></div>
+<div id="more-menu" style="display:none;position:fixed;bottom:65px;left:0;right:0;background:var(--navy);z-index:190;border-radius:20px 20px 0 0;padding:16px 12px 10px;">
+  <div style="text-align:center;font-size:11px;color:#78909c;margin-bottom:12px;">Aur Pages</div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;">
+    <button onclick="showPage('emergency');closeMoreMenu();" style="background:rgba(255,255,255,0.08);border:none;border-radius:10px;padding:10px 4px;color:white;font-size:9px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;"><span style="font-size:20px;">🚨</span>Emergency</button>
+    <button onclick="showPage('transport');closeMoreMenu();" style="background:rgba(255,255,255,0.08);border:none;border-radius:10px;padding:10px 4px;color:white;font-size:9px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;"><span style="font-size:20px;">🚌</span>Transport</button>
+    <button onclick="showPage('schools');closeMoreMenu();" style="background:rgba(255,255,255,0.08);border:none;border-radius:10px;padding:10px 4px;color:white;font-size:9px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;"><span style="font-size:20px;">🏫</span>Schools</button>
+    <button onclick="showPage('events');closeMoreMenu();" style="background:rgba(255,255,255,0.08);border:none;border-radius:10px;padding:10px 4px;color:white;font-size:9px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;"><span style="font-size:20px;">🎉</span>Events</button>
+    <button onclick="showPage('contact');closeMoreMenu();" style="background:rgba(255,255,255,0.08);border:none;border-radius:10px;padding:10px 4px;color:white;font-size:9px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;"><span style="font-size:20px;">📞</span>Contact</button>
+  </div>
+</div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
